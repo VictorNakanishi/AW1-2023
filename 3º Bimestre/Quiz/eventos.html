@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .um{
+            background-color: red;
+            height: 500px;
+            width: 100%;
+        }
+        .dois{
+            background-color: blue;
+            height: 400px;
+            width: 80%;
+        }
+        .tres{
+            background-color: purple;
+            height: 250px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="um">
+        <div class="dois">
+            <div class="tres">
+            </div>
+        </div>
+    </div>
+    <script>
+        var divs = document.querySelectorAll('div')
+
+        divs.forEach(div => {
+            div.addEventListener('click', consoleMSG)
+        });
+
+        function consoleMSG(){
+            console.log(this.classList.value)
+        }
+    </script>
+</body>
+</html>
